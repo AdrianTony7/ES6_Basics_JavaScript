@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+
+  //object variable
+  //in java is HashMap  
+  //in java is HashSet
+  //A key-value map representation
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color1: 'red'
+}
+
+//object variable
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color2: 'yellow'
+}
+
+//Spread feature will help us to merge multiple arrays or objects 
+const arrayObject = ["Omiete", "Esther", "Waribi", "Sam", "Life"];
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+const variableObj_arrayObj = {...arrayObject, ...myVehicle}
+
+
+//Check the result object in the console:
+console.log(myVehicle);
+console.log(updateMyVehicle);
+console.log(myUpdatedVehicle);
+console.log(arrayObject);
+console.log(variableObj_arrayObj);
+
+</script>
+
+<p>Press F12 and see the result object in the console view.</p>
+
+</body>
+</html>

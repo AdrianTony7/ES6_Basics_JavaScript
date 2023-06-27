@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- THE KEYWORD -->
+    <script>
+        
+        //Normal Function 
+        function play(num1, num2){
+            let player = num1+num2;
+            return player;
+           // alert(player);
+           // console.log(player);
+        }
+
+        //Arrow function
+        //play = (mum1, num2) => num1+num2;
+
+        //Java Replica of a function
+        /*public String play(){
+            return null;
+        }*/
+
+        playing = (play1 = play(4,5)) =>{
+            let num3 = 4;
+            return play1 * num3;  
+        }
+
+        console.log(playing())
+        
+        //NORMAL FUNCTION
+        function val(){
+            return "Normal Function!!!"
+        }
+
+        function hello(){
+            return val();
+        }
+
+        hello = () => val();
+    
+        hello = () => {
+            let valuable = val();
+            return valuable;
+        }
+
+        
+        console.log("hello "+hello());
+        console.log("Play "+play(200, 100));
+
+        //ARROW FUNCTION
+        hello = () => "Arrow Function!!!";
+
+        document.writeln("<br>");
+        document.writeln("Product: "+ val());
+        document.writeln("<br>");
+        document.writeln("<br>");
+        document.writeln("Product: "+ hello());
+        document.writeln("<br>");
+        document.writeln("<br>");
+        document.writeln("Product: "+ play(200, 100));
+        </script>
+
+    </body>
+
+</html>
